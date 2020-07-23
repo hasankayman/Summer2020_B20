@@ -1,7 +1,10 @@
-package Day31_Recap;
+package day31_Recap;
+
 import Library.Util;
+
 public class FrequencyOfCharacters {
-     public static void main(String[] args) {
+
+    public static void main(String[] args) {
         String str = "AABBBCCCDDDDDDDDDDEEEEEEEEEEEEFFFFFFFF"; //  ==> A2B3C3
 
         String expectedResult = "";   // A2B3C3
@@ -18,18 +21,22 @@ public class FrequencyOfCharacters {
             int count1 = Util.frequency(str, ch1);  // 2  3  3
             expectedResult +=   ""+ ch1 + count1; // A2B3C3
         }
+
          */
 
 /*
         char ch1 = nonDup.charAt(0); //A
         int count1 = Util.frequency(str, ch1); //2
         expectedResult +=   ""+ ch1 + count1;
+
         char ch2 = nonDup.charAt(1); //B
         int count2 = Util.frequency(str, ch2); //3
         expectedResult +=   ""+ ch2 + count2;
+
         char ch3 = nonDup.charAt(2); //C
         int count3 = Util.frequency(str, ch2); //3
         expectedResult +=   ""+ ch3 + count3;
+
   */
         System.out.println(expectedResult);
 
@@ -60,4 +67,3 @@ public class FrequencyOfCharacters {
 
 
 }
-

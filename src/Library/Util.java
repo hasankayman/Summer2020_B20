@@ -2,7 +2,6 @@ package Library;
 
 public class Util {
 
-
     // import Library.Util;
 
     public static String removeDup(String str) {
@@ -67,6 +66,15 @@ public class Util {
     }
     // returns the frequency of every single characters from a string
 
+    public static String formatFullName(String first, String last) {
+        first = first.substring(0, 1).toUpperCase() + first.substring(1).toLowerCase();
+        last = last.substring(0, 1).toUpperCase() + last.substring(1).toLowerCase();
+        String fullName = first + " " + last;
+
+        return fullName;
+    }
+    // formats the full name
+
 
     public static int maxNum(int[] arr) {
         int max = arr[0];
@@ -112,6 +120,17 @@ public class Util {
     }
     // combines two array and returns it
 
+    public static int[] addElement(int[] arr, int num) {
+        int[] arr2 = new int[arr.length + 1];
+        int i = 0;
+        for (int each : arr) {
+            arr2[i] = each;
+            i++;
+        }
+        arr2[arr2.length - 1] = num;
+        return arr2;
+    }
+    // inserts the element to the array
+
 
 }
-

@@ -1,27 +1,39 @@
 package day04_Variables;
 
-public class variables_practice2 {
+public class Variables_Practice2 {
+// double > float > long > int > short > byte
+
     public static void main(String[] args) {
         int iNum = 50;
-        long lNum = iNum;
+        long lNum = iNum;  //50
 
-        float fNum = lNum;
+       // int iNum2 = lNum;
+        float fNum = lNum; // 50.0
+
+
+    //    float fNum = 500;
+
+    //    float 123fNum = 500;
 
         float fNum123 = 500;
         float num$ = 1000;
 
-        int num1 = 1_000_000;
-
-        int num2;
-
-        num2 = 5000; // bu satir matematikteki gibi num2 5000dir demek degil num2 degeri 5000 olarak atansin demek
-
-        num2 = 2000; // bu satir bir onceki satirda degeri 5000 olarak atanan num2 degiskenin degeri 2000 olarak atansin demek
+        //1,000,000
+    int num1 = 1_000_000;
 
         System.out.println(num1);
 
-        System.out.println(fNum);
-        System.out.println(fNum123);
+        int num2 ;
+        num2 = 5000;  // 5000
+
+        System.out.println(num2); // 5000
+
+        num2 = 2000;  // 2000
+
+        System.out.println(num2);   // 2000
+
+
 
     }
+
 }
