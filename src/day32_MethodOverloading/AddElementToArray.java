@@ -2,15 +2,15 @@ package day32_MethodOverloading;
 
 import java.util.Arrays;
 
-public class AddElements {
+public class AddElementToArray {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5,6,7,8,9};
+        int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         int num = 10;
         System.out.println(Arrays.toString(addElement(arr, num)));
 
 
-
     }
+
     public static int[] addElement(int[] arr, int num) {
         int[] arr2 = new int[arr.length + 1];
         int i = 0;
