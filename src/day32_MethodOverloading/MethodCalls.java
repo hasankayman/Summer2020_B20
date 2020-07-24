@@ -4,8 +4,8 @@ public class MethodCalls {
 
     public static void main(String[] args) {
 
-        String firstName = "elKEm";
-        String lastName = "emEt";
+        String firstName = "naSah";
+        String lastName = "kamyan";
 
         String fullName;
 
