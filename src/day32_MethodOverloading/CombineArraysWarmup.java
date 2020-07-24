@@ -7,15 +7,15 @@ public class CombineArraysWarmup {
     public static int[] combineArrays(int[] arr1, int[] arr2) {
         int[] combinedArray = new int[arr1.length + arr2.length];
         int index = 0;
-        for (int each : arr1) {
+        for (int each : arr1) { // 10,11,12
             combinedArray[index] = each;
             index++;
         }
-        for (int each : arr2) {
+        for (int each : arr2) { // 9 8 7 6
             combinedArray[index] = each;
             index++;
         }
-        return combinedArray;
+        return combinedArray; // [10,11,12,9,8,7,6]
     }
 
     public static String[] combineArrays(String[] arr1, String[] arr2) {
@@ -54,6 +54,7 @@ public class CombineArraysWarmup {
         String[] names2 = {"Rees", "Miguel", "Morris", "Youmans"};
         char[] chars1 = {'A', 'L', 'X'};
         char[] chars2 = {'K', 'A', 'R', 'Z'};
+
         System.out.println(Arrays.toString(combineArrays(array1, array2)));
         System.out.println(Arrays.toString(combineArrays(names1, names2)));
         System.out.println(Arrays.toString(combineArrays(chars1, chars2)));
