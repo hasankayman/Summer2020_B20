@@ -137,7 +137,7 @@ public class Util {
     }
         // inserts the element to the array
 
-    public static int[] sortArrayDescending(int[] array) {
+    public static int[] sortArrayDesc(int[] array) {
         int[] reversed = new int[array.length];
         int i = array.length - 1;
         for (int each : array) {
@@ -147,7 +147,7 @@ public class Util {
         return reversed;
     }
 
-    public static double[] sortArrayDescending(double[] array) {
+    public static double[] sortArrayDesc(double[] array) {
         double[] reversed = new double[array.length];
         int i = array.length - 1;
         for (double each : array) {
@@ -157,7 +157,7 @@ public class Util {
         return reversed;
     }
 
-    public static String[] sortArrayDescending(String[] array) {
+    public static String[] sortArrayDesc(String[] array) {
         String[] reversed = new String[array.length];
         int i = array.length - 1;
         for (String each : array) {
@@ -167,7 +167,7 @@ public class Util {
         return reversed;
     }
 
-    public static char[] sortArrayDescending(char[] array) {
+    public static char[] sortArrayDesc(char[] array) {
         char[] reversed = new char[array.length];
         int i = array.length - 1;
         for (char each : array) {
