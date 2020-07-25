@@ -2,45 +2,41 @@ package day33_LocalDateTime;
 
 import java.util.Arrays;
 
-public class SortArrayDescending {
-    public static int[] sortArrayDescendingOrder(int[] array) {
-        Arrays.sort(array);
+public class SortDescending {
+    public static int[] sortArrayDescending(int[] array) {
         int[] reversed = new int[array.length];
         int i = array.length - 1;
-        for(int each : array) {
+        for (int each : array) {
             reversed[i] = each;
             i--;
         }
         return reversed;
     }
 
-    public static double[] sortArrayDescendingOrder(double[] array) {
-        Arrays.sort(array);
+    public static double[] sortArrayDescending(double[] array) {
         double[] reversed = new double[array.length];
         int i = array.length - 1;
-        for(double each : array) {
+        for (double each : array) {
             reversed[i] = each;
             i--;
         }
         return reversed;
     }
 
-    public static String[] sortArrayDescendingOrder(String[] array) {
-        Arrays.sort(array);
+    public static String[] sortArrayDescending(String[] array) {
         String[] reversed = new String[array.length];
         int i = array.length - 1;
-        for(String each : array) {
+        for (String each : array) {
             reversed[i] = each;
             i--;
         }
         return reversed;
     }
 
-    public static char[] sortArrayDescendingOrder(char[] array) {
-        Arrays.sort(array);
+    public static char[] sortArrayDescending(char[] array) {
         char[] reversed = new char[array.length];
         int i = array.length - 1;
-        for(char each : array) {
+        for (char each : array) {
             reversed[i] = each;
             i--;
         }
