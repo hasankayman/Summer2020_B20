@@ -9,8 +9,10 @@ public class CountDownTimer {
         System.out.println("Today class will last today at " + endtime);
 
         while(endtime.isAfter(LocalTime.now())) {
-            System.out.println("We have " + Duration.between(LocalTime.now(),endtime).getSeconds() + " seconds to finish today class");
-            Thread.sleep(1000);
+           int seconds = (int) Duration.between(LocalTime.now(),endtime).getSeconds();
+           System.out.println("We have " + seconds + " seconds to finish today class");
+           Thread.sleep(1000);
+
         }
     }
 }
