@@ -1,24 +1,25 @@
 package day33_LocalDateTime;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Scanner;
 
 public class DateTimeFormatting {
     public static void main(String[] args) {
-        DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("E, MMM/dd/yyyy");
-        DateTimeFormatter timeFormat = DateTimeFormatter.ofPattern("hh:mm:ss a");
+        Scanner scan = new Scanner(System.in);
+        timeConversion(scan.nextLine());
+    }
 
-        System.out.println(LocalDate.of(2020,7,25).format(dateFormat));
-        System.out.println(LocalTime.of(15,25,54,10).format(timeFormat));
+    public static void timeConversion(String s) {
+        Integer hou = Integer.parseInt(s.substring(0,s.indexOf(":")));
+        Integer min = Integer.parseInt(s.substring(s.indexOf(":") + 1, s.lastIndexOf(":")));
+        Integer sec = Integer.parseInt(s.substring(s.lastIndexOf(":")+1, s.lastIndexOf(":")+3));
 
-        DateTimeFormatter todayDateAndTime = DateTimeFormatter.ofPattern("yyyy/MM/dd EEEE hh:mm:ss a");
-        DateTimeFormatter rightnow = DateTimeFormatter.ofPattern("h:mm:ss a");
-
-        System.out.println(LocalDateTime.now().format(todayDateAndTime));
-        System.out.println(LocalTime.of(10,20,30,40).format(rightnow));
-
+        DateTimeFormatter civilianTime = DateTimeFormatter.ofPattern("hh:mm:ssa");
+        System.out.println(LocalTime.of(hou,min,sec).format(civilianTime));
+        DateTimeFormatter militaryTime = DateTimeFormatter.ofPattern("HH:mm:ss");
+        System.out.println();
 
     }
 }
