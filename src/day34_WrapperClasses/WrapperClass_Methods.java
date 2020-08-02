@@ -1,23 +1,38 @@
 package day34_WrapperClasses;
 
 public class WrapperClass_Methods {
+
     public static void main(String[] args) {
         String str = "123";
-        int a = Integer.parseInt(str);
+        int a =   Integer.parseInt(str);          //123
 
-        System.out.println(str + 1); // prints 1231
-        System.out.println(a + 1);   // prints 124
+        System.out.println(str + 1); //1231
+        System.out.println(a + 1); //124
 
-        String input = "7.5";
-        Double doubleValue = Double.parseDouble(input); //
-        System.out.println(input);   // prints it as string value
-        System.out.println(doubleValue); // prints it as double value
-        System.out.println(input + 2.5);   // prints 7.52.5
-        System.out.println(doubleValue + 2.5); // prints 10.0
 
-        System.out.println("*******************************************");
-        String s2 = "10000000.50";
-        Double.valueOf(s2);
+           Double d1= Double.parseDouble("7.5");
+           // double d2 =12.5;
+        System.out.println(d1-1);
+
+        String s1 = "TRUE";
+
+          boolean b1 = Boolean.parseBoolean(s1);
+
+        System.out.println(!b1);
+
+        System.out.println("===========================================");
+
+
+        String s2 = "10000.5"; // +1
+            double d2 = Double.valueOf(s2); // unboxing
+
+        System.out.println(d2*2);
+
+
+        String s3 = "FaLSe";
+         boolean r2 = Boolean.valueOf(s3); // unboxing
+
+        System.out.println(r2);
 
 
     }

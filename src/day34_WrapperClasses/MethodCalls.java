@@ -1,4 +1,3 @@
-/*
 package day34_WrapperClasses;
 
 import Library.Util;
@@ -24,11 +23,11 @@ public class MethodCalls {
         System.out.println(min);
 
         Character[] ch = {'A', 'A', 'C', 'B', 'B', 'D'};
-        ch = Util.sortArrayDesc(ch);
+        ch = Util.sortDesc(ch);
 
         System.out.println(Arrays.toString(ch));
 
 
     }
 
-}*/
+}
