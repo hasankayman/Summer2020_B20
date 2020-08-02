@@ -10,9 +10,7 @@ public class FrequencyofChars {
         String str = "AABBCDD";
         ArrayList<String> list = new ArrayList<>();
 
-        for (String each : str.split("")) {
-            list.add(each);
-        }
+        Collections.addAll(list, str.split(""));
         System.out.println(list);
 
         String nonDup = Util.removeDup(str);
