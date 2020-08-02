@@ -15,7 +15,7 @@ public class BulkOperations_Practice {
         students.add("Mehary");
 
         //verify that the names Ulku, Busra are contained in students list
-        String [] lookfor = {"Ulku", "Busra", "Muhtar"};
+        String[] lookfor = {"Ulku", "Busra", "Muhtar"};
 
         boolean r1 = students.containsAll(Arrays.asList("Ulku", "Busra", "Muhtar"));
         System.out.println(r1);
@@ -23,14 +23,14 @@ public class BulkOperations_Practice {
         System.out.println(students.containsAll(Arrays.asList(lookfor)));
 
         System.out.println("============================");
-        ArrayList <Integer> numbers = new ArrayList<>();
+        ArrayList<Integer> numbers = new ArrayList<>();
         System.out.println(numbers);
         // add 30,25,40,15,55,65,75,85,95,100
 
-        numbers.addAll(Arrays.asList(30,25,40,15,55,65,75,85,95,100));
+        numbers.addAll(Arrays.asList(30, 25, 40, 15, 55, 65, 75, 85, 95, 100));
         System.out.println(numbers);
 
-        Integer[] addNumbers = {200,300,400};
+        Integer[] addNumbers = {200, 300, 400};
         numbers.addAll(Arrays.asList(addNumbers));
         System.out.println(numbers);
 
@@ -40,18 +40,21 @@ public class BulkOperations_Practice {
         ArrayList<String> group13 = new ArrayList<>();
 
         //add all student names in your group
-        group13.addAll(Arrays.asList("Hasan", "Marat", "Ali"));
+        group13.addAll(Arrays.asList("Hasan", "Marat", "Altay", "Diana", "Harena", "Tetiana", "Bahar","Ali", "Darus"));
 
         //verify your mentor and one of friend's name is in the group 13
-        boolean r4 = group13.containsAll(Arrays.asList("Mehmet","Hakan"));
+        boolean r4 = group13.containsAll(Arrays.asList("Mehmet", "Hakan"));
+
 
         System.out.println(group13);
         System.out.println(r4);
 
-
-
-
-
+        group13.removeAll(Arrays.asList("Diana","Tetiana"));
+        System.out.println(group13);
+        group13.removeIf(name -> name.startsWith("Al"));
+        System.out.println(group13);
+        group13.retainAll(Arrays.asList("Hasan", "Marat", "Harena"));
+        System.out.println(group13);
 
 
 
