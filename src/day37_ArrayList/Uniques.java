@@ -7,16 +7,11 @@ import java.util.Collections;
 public class Uniques {
 
     public static void main(String[] args) {
-        String str = "AABBCDDEAF";
+        String str = "AAABCCCCDF";
         String uniques = "";
 
         ArrayList<String> list = new ArrayList<>();
-
-        for(String each  : str.split("") ){
-            list.add(each);
-        }
-
-        System.out.println(list);
+          list.addAll( Arrays.asList( str.split("") )  )  ;
 
 
         for( String each : list){
@@ -28,7 +23,6 @@ public class Uniques {
 
 
         System.out.println(uniques);
-        
 
 
 

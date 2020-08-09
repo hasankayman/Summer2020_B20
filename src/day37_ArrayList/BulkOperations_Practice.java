@@ -2,10 +2,11 @@ package day37_ArrayList;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 public class BulkOperations_Practice {
+
     public static void main(String[] args) {
+
         ArrayList<String> students = new ArrayList<>();
         students.add("Sayeem");
         students.add("Waqar");
@@ -14,49 +15,41 @@ public class BulkOperations_Practice {
         students.add("Ramazan");
         students.add("Mehary");
 
-        //verify that the names Ulku, Busra are contained in students list
-        String[] lookfor = {"Ulku", "Busra", "Muhtar"};
 
-        boolean r1 = students.containsAll(Arrays.asList("Ulku", "Busra", "Muhtar"));
+
+        // verify that the names Ulku, Busra are contained in students list
+        boolean r1 = students.containsAll(  Arrays.asList("Ulku", "Busra", "Muhtar")   );
+
         System.out.println(r1);
-        students.addAll(Arrays.asList(lookfor));
-        System.out.println(students.containsAll(Arrays.asList(lookfor)));
 
-        System.out.println("============================");
-        ArrayList<Integer> numbers = new ArrayList<>();
-        System.out.println(numbers);
-        // add 30,25,40,15,55,65,75,85,95,100
+        System.out.println("==================================================");
 
-        numbers.addAll(Arrays.asList(30, 25, 40, 15, 55, 65, 75, 85, 95, 100));
-        System.out.println(numbers);
+        ArrayList<String> group1 = new ArrayList<>();
 
-        Integer[] addNumbers = {200, 300, 400};
-        numbers.addAll(Arrays.asList(addNumbers));
-        System.out.println(numbers);
+        // add all student names in your group
+        group1.addAll(  Arrays.asList( "Muhtar", "Nadir", "Asiya", "Saim" ) );
+
+        System.out.println(group1);
 
 
-        System.out.println("================================");
+        // verify your mentor and one of your closest friend' names are contained in the list
+        boolean r2 = group1.containsAll( Arrays.asList("Murodil", "Kuzzat") );
 
-        ArrayList<String> group13 = new ArrayList<>();
-
-        //add all student names in your group
-        group13.addAll(Arrays.asList("Hasan", "Marat", "Altay", "Diana", "Harena", "Tetiana", "Bahar","Ali", "Darus"));
-
-        //verify your mentor and one of friend's name is in the group 13
-        boolean r4 = group13.containsAll(Arrays.asList("Mehmet", "Hakan"));
+        System.out.println(r2);
 
 
-        System.out.println(group13);
-        System.out.println(r4);
+        System.out.println("====================================================");
 
-        group13.removeAll(Arrays.asList("Diana","Tetiana"));
-        System.out.println(group13);
-        group13.removeIf(name -> name.startsWith("Al"));
-        System.out.println(group13);
-        group13.retainAll(Arrays.asList("Hasan", "Marat", "Harena"));
-        System.out.println(group13);
+        ArrayList<String> employees =new ArrayList<>();
+        employees.addAll( Arrays.asList( "Ahmed", "Muhtar", "Ahmed", "Virginia", "Beslan", "Ibrahim", "Ahmed") );
+
+        System.out.println(employees);
+
+        employees.retainAll(  Arrays.asList("Ahmed", "Dawud")  );
+        System.out.println(employees);
 
 
 
     }
+
 }

@@ -5,22 +5,35 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class CollectionsUtility {
+
     public static void main(String[] args) {
+
         ArrayList<Integer> list = new ArrayList<>();
-        list.addAll(Arrays.asList(20,50,60,120,56,78,0,-1,-3,400,5000,500));
+        list.addAll( Arrays.asList(30,20,56,78,98,100, 20, 0, -1, -3, 400, 500, 5000) );
 
-        //maximum number
-        System.out.println("Maximum number in the list is " + Collections.max(list));
+        // maximum number:
+        Integer max = Collections.max(list);
 
-        //minimum number
-        System.out.println("Maximum number in the list is " + Collections.min(list));
+        // minimum number:
+        Integer min = Collections.min(list);
 
-        //sort numbers
-        Collections.sort(list);
-        System.out.println(list);
 
-        //multiply with -1
+        System.out.println("Maximum Number: "+max);
+        System.out.println("Minimum Number: "+min);
+
+
+        System.out.println("===================================================");
+        ArrayList<String> names = new ArrayList<>();
+        names.addAll( Arrays.asList("Ramazan", "Islem", "Muhtar", "Saim", "Muhtar", "Asiya") );
+
+        //replaceAll
+        Collections.replaceAll(names, "Muhtar", "Fatime");
+
+        System.out.println(names);
+
+
 
 
     }
+
 }
