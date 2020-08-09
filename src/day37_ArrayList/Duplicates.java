@@ -18,6 +18,8 @@ public class Duplicates {
             }
         }
         System.out.println(newlist);
+        newlist.removeAll(Arrays.asList(1));
+        System.out.println(newlist);
 
     }
 }
