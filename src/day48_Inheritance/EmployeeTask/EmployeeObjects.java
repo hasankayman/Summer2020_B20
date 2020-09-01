@@ -5,7 +5,7 @@ public class EmployeeObjects {
         Tester tester1 = new Tester("Habibe", "QA Engineer", 900124541,'F',110000);
 
         System.out.println("Tester name = " + tester1.name);
-        System.out.println("Tester salary = " + tester1.salary);
+       // System.out.println("Tester salary = " + tester1.);
 
         tester1.findingBugs();
         System.out.println(tester1);

@@ -3,9 +3,9 @@ package day48_Inheritance.EmployeeTask;
 public class Employee {
     public String name;
     public String jobTitle;
-    public long id;
+    private long id;
     public char gender;
-    public double salary;
+    private double salary;
 
     public void setInfo(String name, String jobTitle, long id, char gender, double salary) {
         this.name = name;
@@ -14,6 +14,8 @@ public class Employee {
         this.gender = gender;
         this.salary = salary;
     }
+
+ 
 
     public String toString() {
         return "Name: " + name + ", Job Title: " + jobTitle + "ID#: " + id +

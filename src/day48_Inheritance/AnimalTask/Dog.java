@@ -11,7 +11,7 @@ public class Dog extends Animal {
         System.out.println(name + " is barking");
     }
 
-    public Dog(String name, String size, int age, char gender) {
-        setInfo(name, size, age, gender);
+    public Dog(String name, String size, int age, char gender, String breed) {
+        setInfo(name, size, age, gender, breed);
     }
 }
